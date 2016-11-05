@@ -57,10 +57,11 @@ var article = {
             </p>
             <p>
                 this is my third article
-            </p>
+            </p>`
            
-    },
+    }
 };
+
 function createTemplate (data){
     var title=data.title;
     var heading=data.heading;
