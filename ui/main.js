@@ -15,11 +15,20 @@ button.onclick=function(){
       reqest.open('GET','http://sarvani03.imad.hasura-aapp.i0'/counter,true);
       request.send(null);
 };
-
-var nameInput=documet.getElementById('name');
+var img=document.getElementById('madi');
+var marginLeft=0;
+function moveLeft(){
+    marginLeft=marginLeft+1;
+    img.style.marginLeft=marginLeft+'px';
+    return marginLeft;
+}
+img.onclick=function(){
+    var interval=setInterval(moveLeft,10);
+}
+/*var nameInput=documet.getElementById('name');
 var name=nameInput.value;
 var submit= document.getElementById('submit_btn');
-submit.onclick =function(){
+ submit.onclick =function(){
     var names=['name1','name2','name3'];
     var list='';
     for(var i=0;i<names.length;i++){
@@ -27,4 +36,4 @@ submit.onclick =function(){
     }
     var ul=document.getElementById('nameslist');
     ui.innerHTML=list;
-};
+};*/
