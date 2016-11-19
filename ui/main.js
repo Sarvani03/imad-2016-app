@@ -23,7 +23,7 @@ function moveRight(){
 }
 img.onclick=function(){
     var interval=setInterval(moveRight,10);
-}
+};
 /*var nameInput=documet.getElementById('name');
 var name=nameInput.value;
 var submit= document.getElementById('submit_btn');
