@@ -16,14 +16,14 @@ button.onclick=function(){
       request.send(null);
 };
 var img=document.getElementById('madi');
-var marginLeft=0;
-function moveLeft(){
-    marginLeft=marginLeft+1;
-    img.style.marginLeft=marginLeft+'px';
-    return marginLeft;
+var marginRight=0;
+function moveRight(){
+    marginRight=marginRight+1;
+    img.style.marginRight=marginRight+'px';
+    return marginRight;
 }
 img.onclick=function(){
-    var interval=setInterval(moveLeft,10);
+    var interval=setInterval(moveRight,10);
 }
 /*var nameInput=documet.getElementById('name');
 var name=nameInput.value;
