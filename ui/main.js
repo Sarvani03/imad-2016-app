@@ -1,5 +1,5 @@
 
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
 button.onclick=function(){
     var request=new XMLHttpRequest();
     
@@ -15,6 +15,14 @@ button.onclick=function(){
       reqest.open('GET','http://sarvani03.imad.hasura-aapp.i0'/counter,true);
       request.send(null);
 };
+*/
+
+console.log('loaded!');
+var element=document.getElementById('main-text');
+element.innerHTML='New value';
+
+
+
 var img=document.getElementById('madi');
 var marginLeft=0;
 function moveRight(){
