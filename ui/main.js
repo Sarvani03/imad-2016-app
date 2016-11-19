@@ -16,11 +16,10 @@ button.onclick=function(){
       request.send(null);
 };
 var img=document.getElementById('madi');
-var marginRight=0;
+var marginLeft=0;
 function moveRight(){
-    marginRight=marginRight+1;
-    img.style.marginRight=marginRight+'px';
-    return marginRight;
+    marginLeft=marginLeft+1;
+    img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){
     var interval=setInterval(moveRight,10);
