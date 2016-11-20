@@ -29,7 +29,7 @@ var marginRight=0;
 function moveRight(){
     marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
-    if(marginLeft>200){
+    if(marginLeft>10){
       var interval=setInterval(moveLeft,100);   
     }
     
