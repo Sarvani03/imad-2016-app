@@ -7,7 +7,7 @@ var Pool = require('pg').Pool;
 
 var app = express();
 app.use(morgan('combined'));
-
+/*
 var article = {
     'article-one':{
     title:'Article one made by sarvani',
@@ -53,7 +53,7 @@ var article = {
            
     }
 };
-
+*/
 function createTemplate (data){
     var title=data.title;
     var heading=data.heading;
