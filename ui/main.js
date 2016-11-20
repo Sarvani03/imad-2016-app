@@ -19,7 +19,7 @@ button.onclick=function(){
 
 console.log('loaded!');
 var element=document.getElementById('main-text');
-element.innerHTML='New value';
+
 
 
 
