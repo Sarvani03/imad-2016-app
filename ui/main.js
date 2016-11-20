@@ -25,12 +25,21 @@ element.innerHTML='New value';
 
 var img=document.getElementById('madi');
 var marginLeft=0;
+var marginRight=0;
 function moveRight(){
     marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
 }
-img.onclick=function(){
+function moveLeft(){
+    marginRight=marginRight-1;
+    img.style.marginRight=marginRight+'px';
+}
+img.onclickRight=function(){
     var interval=setInterval(moveRight,100);
+    
+};
+img.onClickLeft=function(){
+    var interval=setInterval(moveLeft,100);
 };
 /*var nameInput=documet.getElementById('name');
 var name=nameInput.value;
