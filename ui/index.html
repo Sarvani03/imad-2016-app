@@ -20,6 +20,19 @@
             </div>
         
         <script type="text/javascript" src="/ui/main.js">
+          function moveRight(){
+    marginLeft=marginLeft+1;
+    img.style.marginLeft=marginLeft+'px';
+}
+
+img.onclick=function(){
+    var interval=setInterval(moveRight,2);
+};
+
+
+           function stopmovement(){
+               clearInterval(interval);
+           }
           </script>
         <div>
          
