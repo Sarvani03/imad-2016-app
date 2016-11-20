@@ -29,8 +29,8 @@ var marginRight=0;
 function moveRight(){
     marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
-    if(marginLeft>10){
-      var interval=setInterval(moveLeft,100);   
+    if(marginLeft>5){
+      var interval=setInterval(moveLeft,50);   
     }
     
 }
@@ -39,7 +39,7 @@ function moveLeft(){
     img.style.marginRight=marginRight+'px';
 }
 img.onclick=function(){
-    var interval=setInterval(moveRight,100);
+    var interval=setInterval(moveRight,50);
 };
 
 /*var nameInput=documet.getElementById('name');
