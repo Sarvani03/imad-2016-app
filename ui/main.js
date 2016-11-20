@@ -30,7 +30,7 @@ function moveRight(){
     img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){
-    var interval=setInterval(moveRight,10);
+    var interval=setInterval(moveRight,100);
 };
 /*var nameInput=documet.getElementById('name');
 var name=nameInput.value;
