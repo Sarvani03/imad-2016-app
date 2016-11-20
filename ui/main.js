@@ -23,12 +23,9 @@ var element=document.getElementById('main-text');
 
 
 
-function stopmovement(){
-    clearInterval(interval);
-}
+
 var img=document.getElementById('madi');
-var marginLeft=0;
-var marginRight=0;
+
 
 
 
