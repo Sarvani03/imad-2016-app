@@ -30,8 +30,7 @@ var img=document.getElementById('madi');
 }
 
 img.onclick=function(){
-    var interval=moveRight();
-   
+    var interval=setInterval(moveRight,10); 
 };
 
 
