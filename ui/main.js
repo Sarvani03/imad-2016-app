@@ -20,27 +20,24 @@ button.onclick=function(){
 console.log('loaded!');
 var element=document.getElementById('main-text');
 
-
-
-
-
 var img=document.getElementById('madi');
  var marginLeft=0;
-          function moveRight(){
-    marginLeft=marginLeft+1;
+
+    function moveRight(){
+    marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px';
-   clearInterval(interval);
+   
 }
 
 img.onclick=function(){
-    var interval=setInterval(moveRight,2);
-    clearInterval(interval);
+    var interval=moveRight();
+   
 };
 
 
-           function stopmovement(){
-               clearInterval(interval);
-           }
+  function stopmovement(){
+      clearInterval(interval);
+   }
 
 
 
