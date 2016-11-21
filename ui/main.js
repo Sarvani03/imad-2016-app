@@ -24,10 +24,9 @@ var img=document.getElementById('madi');
  var marginLeft=0;
 
     function moveRight(){
-        for(i=0;i<5;i++){
-    marginLeft=marginLeft+55;
+        marginLeft=marginLeft+100;
     img.style.marginLeft=marginLeft+'px';
-        }   
+       
 }
 
 img.onclick=function(){
