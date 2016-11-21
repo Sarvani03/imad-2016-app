@@ -24,7 +24,7 @@ var img=document.getElementById('madi');
  var marginLeft=0;
 
     function moveRight(){
-        for(int i=0;i<5;i++){
+        for(i=0;i<5;i++){
     marginLeft=marginLeft+55;
     img.style.marginLeft=marginLeft+'px';
         }   
