@@ -29,11 +29,12 @@ var img=document.getElementById('madi');
           function moveRight(){
     marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
-    stopmovement();
+   clearInterval(interval);
 }
 
 img.onclick=function(){
     var interval=setInterval(moveRight,2);
+    clearInterval(interval);
 };
 
 
