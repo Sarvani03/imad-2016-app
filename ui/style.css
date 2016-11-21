@@ -28,3 +28,12 @@ body {
             padding-left:20px;
             padding-right:20px;
         }
+.head{
+    color:#999999;
+    padding-left:30px;
+    padding-right:30px;
+    font-weight: bold;
+    font-size:350%;
+    text-align: center;
+     margin-top:5px;
+}        
