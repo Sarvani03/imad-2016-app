@@ -26,7 +26,7 @@ var img=document.getElementById('madi');
     function moveRight(){
         marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
-        if(marginLeft>50){
+        if(marginLeft>5){
             stopMovement();
         }
        
