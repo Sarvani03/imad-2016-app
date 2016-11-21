@@ -1,4 +1,4 @@
-
+stop
 /*var button=document.getElementById('counter');
 button.onclick=function(){
     var request=new XMLHttpRequest();
@@ -26,6 +26,9 @@ var img=document.getElementById('madi');
     function moveRight(){
         marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
+        if(marginLeft>50){
+            stopMovement();
+        }
        
 }
 
@@ -34,7 +37,7 @@ img.onclick=function(){
 };
 
 
-  function stopmovement(){
+  function stopMovement(){
       clearInterval(interval);
    }
 
