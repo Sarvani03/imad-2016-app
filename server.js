@@ -2,8 +2,12 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+app.get('/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 
+/*
 
 var app = express();
 app.use(morgan('combined'));
@@ -54,6 +58,7 @@ var article = {
     }
 };
 */
+/*
 function createTemplate (data){
     var title=data.title;
     var heading=data.heading;
@@ -94,7 +99,7 @@ app.get('/counter',function(req,res){
     counter=counter+1;
     res.send(counter.toString());
 });
-
+*/
 /*
 app.get('/:articleName', function (req, res) {
    var articleName=req.params.articleName;
@@ -109,7 +114,7 @@ app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'articleThree.html'));
 });
 */
-
+/*
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -136,7 +141,7 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
+*/
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
