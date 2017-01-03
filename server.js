@@ -112,7 +112,9 @@ app.get('/article-three', function (req, res) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'index.html'));
 });
-
+app.get('/index.css', function (req, res) {
+  res.sendFile(path.join(__dirname,'index.css'));
+});
 app.get('/test_db',function(req,res){
  //make a select request
  //return a response with the results
