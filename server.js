@@ -116,6 +116,34 @@ app.get('/index1.css', function (req, res) {
   res.sendFile(path.join(__dirname,'index1.css'));
 });
 
+app.get('/signup.php', function (req, res) {
+  res.sendFile(path.join(__dirname,'signup.php'));
+});
+
+app.get('/login.php', function (req, res) {
+  res.sendFile(path.join(__dirname,'login.php'));
+});
+
+app.get('/cart.php', function (req, res) {
+  res.sendFile(path.join(__dirname,'cart.php'));
+});
+
+app.get('/products.php', function (req, res) {
+  res.sendFile(path.join(__dirname,'products.php'));
+});
+
+app.get('/settings.php', function (req, res) {
+  res.sendFile(path.join(__dirname,'settings.php'));
+});
+
+app.get('/success.php', function (req, res) {
+  res.sendFile(path.join(__dirname,'success.php'));
+});
+
+
+
+
+
 app.get('/test_db',function(req,res){
  //make a select request
  //return a response with the results
